@@ -16,8 +16,6 @@ namespace SuggestImprovements
 {
     public partial class AddProposal : Form
     {
-        DataBase db = new DataBase();
-
         private ProposalKeys? _key;
         private IDictionary<int, string> _authorKeys;
         private IDictionary<int, string> _areaKeys;
@@ -193,45 +191,6 @@ namespace SuggestImprovements
             FillForm();
         }
 
-        private void AddButton_Click(object sender, EventArgs e)
-        {
-            db.OpenConnection();
-
-            //var type = Description_textbx.Text;
-
-            //var addQuery = $"INSERT INTO public.\"Positions\"(\"Name\")\r\nVALUES ('{type}');";
-
-            //var command = new NpgsqlCommand(addQuery, db.GetConnection());
-            //command.ExecuteNonQuery();
-
-            //MessageBox.Show("Запись создана", "Успешно", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-            using (var context = new LeanSiContext())
-            {
-                var proposal = new ProposalKeys
-                {
-                    Date = DateTimeExtensions.DateOnlyFromDateTime(dateTimePicker1.Value),
-                    Author = Author_cbx.SelectedIndex + 1,
-                    Area = Area_cbx.SelectedIndex + 1,
-                    Loss = Loss_cbx.SelectedIndex + 1,
-                    Judgment = Judgment_cbx.SelectedIndex + 1,
-                    Description = Description_textbx.Text.ToString(),
-                    Costs = Convert.ToInt32(Cost_textbx.Text),
-                    EconomicEffect = Convert.ToInt32(Economic_textbx.Text),
-                    ActualCosts = default,
-                    IsCompleted = default,
-                    DateComplete = default
-                };
-
-                context.Proposals.Add(proposal);
-                context.SaveChanges();
-            }
-
-            MessageBox.Show("Запись создана", "Успешно", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-            db.CloseConnection();
-        }
-
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox1.Checked)
@@ -268,7 +227,7 @@ namespace SuggestImprovements
 
                     context.Remove(proposal);
                     context.SaveChanges();
-                    MessageBox.Show("Запись Удалена", "Успешно", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    //MessageBox.Show("Запись Удалена", "Успешно", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     DateOnly? date = null;
 
@@ -324,7 +283,7 @@ namespace SuggestImprovements
 
                     context.Proposals.Add(prop);
                     context.SaveChanges();
-                    MessageBox.Show("Изменения сохранены", "Успешно", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Запись добавлена", "Успешно", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Close();
                 }
             }
@@ -368,18 +327,6 @@ namespace SuggestImprovements
                 MessageBox.Show("Please enter only numbers.");
                 ActCost_textbx.Text = ActCost_textbx.Text.Remove(ActCost_textbx.Text.Length - 1);
             }
-        }
-
-        private void Save_button_MouseEnter(object sender, EventArgs e)
-        {
-            //if (Description_textbx.Text == "")
-            //{
-            //    Description_textbx.BackColor = Color.Red;
-            //}
-            //else
-            //{
-            //    Description_textbx.BackColor = Color.Empty;
-            //}
         }
     }
 }

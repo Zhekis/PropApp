@@ -26,11 +26,6 @@ namespace SuggestImprovements
             form.Show();
         }
 
-        private void addPositionButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Position_button_Click(object sender, EventArgs e)
         {
             PositionForm position = new PositionForm();
@@ -129,7 +124,6 @@ namespace SuggestImprovements
         {
             FillGridView();
             Filter_comboBox.Text = "Подразделение";
-
         }
 
         private void FillGridView()
@@ -163,16 +157,16 @@ namespace SuggestImprovements
                 var bindingList = new BindingList<ProposalElem>(proposal);
                 var source = new BindingSource(bindingList, null);
                 dataGridView1.DataSource = source;
-                dataGridView1.Columns[0].HeaderText = "Номер";
+                dataGridView1.Columns[0].HeaderText = "Номер ППУ";
                 dataGridView1.Columns[1].HeaderText = "Дата";
                 dataGridView1.Columns[2].HeaderText = "Автор";
                 dataGridView1.Columns[3].HeaderText = "Подразделение";
-                dataGridView1.Columns[4].HeaderText = "Область";
-                dataGridView1.Columns[5].HeaderText = "Потери";
+                dataGridView1.Columns[4].HeaderText = "Область улучшения";
+                dataGridView1.Columns[5].HeaderText = "Вид потери";
                 dataGridView1.Columns[6].HeaderText = "Решение тех. совета";
                 dataGridView1.Columns[7].HeaderText = "Описание";
-                dataGridView1.Columns[8].HeaderText = "Затраты";
-                dataGridView1.Columns[9].HeaderText = "Актуальные затраты";
+                dataGridView1.Columns[8].HeaderText = "Планируемые затраты";
+                dataGridView1.Columns[9].HeaderText = "Фактические затраты";
                 dataGridView1.Columns[10].HeaderText = "Экономический эффект";
                 dataGridView1.Columns[11].HeaderText = "Выполнено";
                 dataGridView1.Columns[12].HeaderText = "Дата реализации";
@@ -285,16 +279,6 @@ namespace SuggestImprovements
             //}
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void Position_button_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void Authors_button_Click(object sender, EventArgs e)
         {
             StaffForm form = new StaffForm();
@@ -306,26 +290,5 @@ namespace SuggestImprovements
             FillGridView();
             Filter_comboBox.Text = "Подразделение";
         }
-
-        //private void FillAuthors()
-        //{
-        //    using (var context = new LeanSiContext())
-        //    {
-        //        var q = from department in context.Departments.AsNoTracking()
-        //                orderby department.Name
-        //                select department;
-
-        //        var authorList = q.ToList();
-
-        //        Filter_comboBox.Items.Clear();
-        //        _authorKeys.Clear();
-
-        //        authorList.ForEach(delegate (Author author)
-        //        {
-        //            _authorKeys.Add(author.Id, author.FirstName + " " + author.LastName.Trim());
-        //            Author_cbx.Items.Add(author.FirstName + " " + author.LastName.Trim());
-        //        });
-        //    }
-        //}
     }
 }

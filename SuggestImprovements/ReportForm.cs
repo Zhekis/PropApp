@@ -32,6 +32,15 @@ namespace SuggestImprovements
 
             adapter.Fill(dt);
             dataGridView1.DataSource = dt;
+            dataGridView1.Columns[0].HeaderText = "Цех";
+            dataGridView1.Columns[1].HeaderText = "Количество ППУ";
+            dataGridView1.Columns[2].HeaderText = "Количество реализованых ППУ";
+            dataGridView1.Columns[3].HeaderText = "Планируемые затраты";
+            dataGridView1.Columns[4].HeaderText = "Фактические затраты";
+            dataGridView1.Columns[5].HeaderText = "% реализации";
+            dataGridView1.Columns[6].HeaderText = "Экономический эффект";
+            dataGridView1.Columns[7].HeaderText = "Области улучшений";
+            dataGridView1.Columns[8].HeaderText = "Виды потерь";
 
             //using (var context = new LeanSiContext())
             //{

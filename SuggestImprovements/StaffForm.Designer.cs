@@ -55,7 +55,7 @@
             this.DeleteButton.Name = "DeleteButton";
             this.DeleteButton.Size = new System.Drawing.Size(75, 23);
             this.DeleteButton.TabIndex = 13;
-            this.DeleteButton.Text = "Delete";
+            this.DeleteButton.Text = "Удалить";
             this.DeleteButton.UseVisualStyleBackColor = true;
             // 
             // AddButton
@@ -64,29 +64,29 @@
             this.AddButton.Name = "AddButton";
             this.AddButton.Size = new System.Drawing.Size(75, 23);
             this.AddButton.TabIndex = 12;
-            this.AddButton.Text = "Add";
+            this.AddButton.Text = "Добавить";
             this.AddButton.UseVisualStyleBackColor = true;
             // 
             // EditButton
             // 
-            this.EditButton.Location = new System.Drawing.Point(201, 339);
+            this.EditButton.Location = new System.Drawing.Point(180, 339);
             this.EditButton.Name = "EditButton";
-            this.EditButton.Size = new System.Drawing.Size(75, 23);
+            this.EditButton.Size = new System.Drawing.Size(96, 23);
             this.EditButton.TabIndex = 11;
-            this.EditButton.Text = "Edit";
+            this.EditButton.Text = "Редактировать";
             this.EditButton.UseVisualStyleBackColor = true;
             // 
             // StaffForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(728, 450);
+            this.ClientSize = new System.Drawing.Size(672, 450);
             this.Controls.Add(this.DeleteButton);
             this.Controls.Add(this.AddButton);
             this.Controls.Add(this.EditButton);
             this.Controls.Add(this.dataGridView1);
             this.Name = "StaffForm";
-            this.Text = "StaffForm";
+            this.Text = "Персонал";
             this.Activated += new System.EventHandler(this.StaffForm_Activated);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

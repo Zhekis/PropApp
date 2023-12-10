@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\BD\\SuggestImprovements\\SuggestImprovements.csproj": {}
+    "D:\\Filesprogramming\\BD\\PropApp\\SuggestImprovements\\SuggestImprovements.csproj": {}
   },
   "projects": {
-    "D:\\BD\\SuggestImprovements\\SuggestImprovements.csproj": {
+    "D:\\Filesprogramming\\BD\\PropApp\\SuggestImprovements\\SuggestImprovements.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\BD\\SuggestImprovements\\SuggestImprovements.csproj",
+        "projectUniqueName": "D:\\Filesprogramming\\BD\\PropApp\\SuggestImprovements\\SuggestImprovements.csproj",
         "projectName": "SuggestImprovements",
-        "projectPath": "D:\\BD\\SuggestImprovements\\SuggestImprovements.csproj",
+        "projectPath": "D:\\Filesprogramming\\BD\\PropApp\\SuggestImprovements\\SuggestImprovements.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\BD\\SuggestImprovements\\obj\\",
+        "outputPath": "D:\\Filesprogramming\\BD\\PropApp\\SuggestImprovements\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",

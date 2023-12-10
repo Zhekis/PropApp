@@ -43,6 +43,10 @@ namespace SuggestImprovements
                 //var bindingList = new BindingList(proposal);
                 //var source = new BindingSource(bindingList, null);
                 dataGridView1.DataSource = staff;
+                dataGridView1.Columns[0].HeaderText = "Имя";
+                dataGridView1.Columns[1].HeaderText = "Фамилия";
+                dataGridView1.Columns[2].HeaderText = "Цех";
+                dataGridView1.Columns[3].HeaderText = "Должность";
                 dataGridView1.Rows[0].Selected = true;
             }
         }

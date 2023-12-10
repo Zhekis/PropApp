@@ -61,26 +61,25 @@ namespace SuggestImprovements
             // 
             this.Author_cbx.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Author_cbx.FormattingEnabled = true;
-            this.Author_cbx.Location = new System.Drawing.Point(24, 87);
+            this.Author_cbx.Location = new System.Drawing.Point(23, 92);
             this.Author_cbx.Name = "Author_cbx";
             this.Author_cbx.Size = new System.Drawing.Size(146, 23);
             this.Author_cbx.TabIndex = 0;
             // 
             // Save_button
             // 
-            this.Save_button.Location = new System.Drawing.Point(194, 394);
+            this.Save_button.Location = new System.Drawing.Point(162, 376);
             this.Save_button.Name = "Save_button";
             this.Save_button.Size = new System.Drawing.Size(75, 23);
             this.Save_button.TabIndex = 1;
-            this.Save_button.Text = "Save";
+            this.Save_button.Text = "Сохранить";
             this.Save_button.UseVisualStyleBackColor = true;
             this.Save_button.Click += new System.EventHandler(this.Save_button_Click);
-            this.Save_button.MouseEnter += new System.EventHandler(this.Save_button_MouseEnter);
             // 
             // Description_textbx
             // 
             this.Description_textbx.BackColor = System.Drawing.SystemColors.Window;
-            this.Description_textbx.Location = new System.Drawing.Point(24, 265);
+            this.Description_textbx.Location = new System.Drawing.Point(23, 282);
             this.Description_textbx.Multiline = true;
             this.Description_textbx.Name = "Description_textbx";
             this.Description_textbx.PlaceholderText = "Введите описание предложения";
@@ -90,7 +89,7 @@ namespace SuggestImprovements
             // Date_label
             // 
             this.Date_label.AutoSize = true;
-            this.Date_label.Location = new System.Drawing.Point(24, 25);
+            this.Date_label.Location = new System.Drawing.Point(23, 30);
             this.Date_label.Name = "Date_label";
             this.Date_label.Size = new System.Drawing.Size(90, 15);
             this.Date_label.TabIndex = 3;
@@ -99,7 +98,7 @@ namespace SuggestImprovements
             // Author_label
             // 
             this.Author_label.AutoSize = true;
-            this.Author_label.Location = new System.Drawing.Point(24, 69);
+            this.Author_label.Location = new System.Drawing.Point(23, 74);
             this.Author_label.Name = "Author_label";
             this.Author_label.Size = new System.Drawing.Size(43, 15);
             this.Author_label.TabIndex = 4;
@@ -109,7 +108,7 @@ namespace SuggestImprovements
             // 
             this.dateTimePicker1.CustomFormat = "dd.MM.yyyy";
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(24, 43);
+            this.dateTimePicker1.Location = new System.Drawing.Point(23, 48);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(146, 23);
             this.dateTimePicker1.TabIndex = 5;
@@ -119,7 +118,7 @@ namespace SuggestImprovements
             // 
             this.Area_cbx.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Area_cbx.FormattingEnabled = true;
-            this.Area_cbx.Location = new System.Drawing.Point(24, 131);
+            this.Area_cbx.Location = new System.Drawing.Point(23, 136);
             this.Area_cbx.Name = "Area_cbx";
             this.Area_cbx.Size = new System.Drawing.Size(146, 23);
             this.Area_cbx.TabIndex = 6;
@@ -128,7 +127,7 @@ namespace SuggestImprovements
             // 
             this.Loss_cbx.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Loss_cbx.FormattingEnabled = true;
-            this.Loss_cbx.Location = new System.Drawing.Point(24, 178);
+            this.Loss_cbx.Location = new System.Drawing.Point(23, 183);
             this.Loss_cbx.Name = "Loss_cbx";
             this.Loss_cbx.Size = new System.Drawing.Size(146, 23);
             this.Loss_cbx.TabIndex = 7;
@@ -136,7 +135,7 @@ namespace SuggestImprovements
             // Area_label
             // 
             this.Area_label.AutoSize = true;
-            this.Area_label.Location = new System.Drawing.Point(24, 113);
+            this.Area_label.Location = new System.Drawing.Point(23, 118);
             this.Area_label.Name = "Area_label";
             this.Area_label.Size = new System.Drawing.Size(56, 15);
             this.Area_label.TabIndex = 8;
@@ -145,7 +144,7 @@ namespace SuggestImprovements
             // Loss_label
             // 
             this.Loss_label.AutoSize = true;
-            this.Loss_label.Location = new System.Drawing.Point(24, 160);
+            this.Loss_label.Location = new System.Drawing.Point(23, 165);
             this.Loss_label.Name = "Loss_label";
             this.Loss_label.Size = new System.Drawing.Size(72, 15);
             this.Loss_label.TabIndex = 9;
@@ -155,7 +154,7 @@ namespace SuggestImprovements
             // 
             this.Judgment_cbx.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Judgment_cbx.FormattingEnabled = true;
-            this.Judgment_cbx.Location = new System.Drawing.Point(24, 223);
+            this.Judgment_cbx.Location = new System.Drawing.Point(23, 228);
             this.Judgment_cbx.Name = "Judgment_cbx";
             this.Judgment_cbx.Size = new System.Drawing.Size(146, 23);
             this.Judgment_cbx.TabIndex = 10;
@@ -163,7 +162,7 @@ namespace SuggestImprovements
             // Judg_label
             // 
             this.Judg_label.AutoSize = true;
-            this.Judg_label.Location = new System.Drawing.Point(24, 205);
+            this.Judg_label.Location = new System.Drawing.Point(23, 210);
             this.Judg_label.Name = "Judg_label";
             this.Judg_label.Size = new System.Drawing.Size(60, 15);
             this.Judg_label.TabIndex = 11;
@@ -172,7 +171,7 @@ namespace SuggestImprovements
             // Description_label
             // 
             this.Description_label.AutoSize = true;
-            this.Description_label.Location = new System.Drawing.Point(24, 247);
+            this.Description_label.Location = new System.Drawing.Point(23, 264);
             this.Description_label.Name = "Description_label";
             this.Description_label.Size = new System.Drawing.Size(65, 15);
             this.Description_label.TabIndex = 12;
@@ -181,16 +180,16 @@ namespace SuggestImprovements
             // Cost_label
             // 
             this.Cost_label.AutoSize = true;
-            this.Cost_label.Location = new System.Drawing.Point(272, 43);
+            this.Cost_label.Location = new System.Drawing.Point(259, 30);
             this.Cost_label.Name = "Cost_label";
-            this.Cost_label.Size = new System.Drawing.Size(55, 15);
+            this.Cost_label.Size = new System.Drawing.Size(135, 15);
             this.Cost_label.TabIndex = 14;
-            this.Cost_label.Text = "Затраты:";
+            this.Cost_label.Text = "Планируемые затраты:";
             // 
             // Economic_label
             // 
             this.Economic_label.AutoSize = true;
-            this.Economic_label.Location = new System.Drawing.Point(364, 43);
+            this.Economic_label.Location = new System.Drawing.Point(259, 118);
             this.Economic_label.Name = "Economic_label";
             this.Economic_label.Size = new System.Drawing.Size(150, 15);
             this.Economic_label.TabIndex = 16;
@@ -198,71 +197,72 @@ namespace SuggestImprovements
             // 
             // Cost_textbx
             // 
-            this.Cost_textbx.Location = new System.Drawing.Point(272, 61);
+            this.Cost_textbx.Location = new System.Drawing.Point(259, 48);
             this.Cost_textbx.Name = "Cost_textbx";
-            this.Cost_textbx.Size = new System.Drawing.Size(84, 23);
+            this.Cost_textbx.Size = new System.Drawing.Size(55, 23);
             this.Cost_textbx.TabIndex = 17;
             this.Cost_textbx.TextChanged += new System.EventHandler(this.Cost_textbx_TextChanged);
             // 
             // Economic_textbx
             // 
-            this.Economic_textbx.Location = new System.Drawing.Point(391, 61);
+            this.Economic_textbx.Location = new System.Drawing.Point(260, 136);
             this.Economic_textbx.Name = "Economic_textbx";
-            this.Economic_textbx.Size = new System.Drawing.Size(84, 23);
+            this.Economic_textbx.Size = new System.Drawing.Size(77, 23);
             this.Economic_textbx.TabIndex = 18;
             this.Economic_textbx.TextChanged += new System.EventHandler(this.Economic_textbx_TextChanged);
             // 
             // Cancel_button
             // 
-            this.Cancel_button.Location = new System.Drawing.Point(291, 394);
+            this.Cancel_button.Location = new System.Drawing.Point(259, 376);
             this.Cancel_button.Name = "Cancel_button";
             this.Cancel_button.Size = new System.Drawing.Size(75, 23);
             this.Cancel_button.TabIndex = 19;
-            this.Cancel_button.Text = "Cancel";
+            this.Cancel_button.Text = "Отмена";
             this.Cancel_button.UseVisualStyleBackColor = true;
             this.Cancel_button.Click += new System.EventHandler(this.Cancel_button_Click);
             // 
             // AddAuthorButton
             // 
-            this.AddAuthorButton.Location = new System.Drawing.Point(176, 87);
+            this.AddAuthorButton.Location = new System.Drawing.Point(175, 92);
             this.AddAuthorButton.Name = "AddAuthorButton";
             this.AddAuthorButton.Size = new System.Drawing.Size(17, 23);
             this.AddAuthorButton.TabIndex = 20;
             this.AddAuthorButton.Text = "+";
             this.AddAuthorButton.UseVisualStyleBackColor = true;
+            this.AddAuthorButton.Visible = false;
             // 
             // ActCost_textbx
             // 
-            this.ActCost_textbx.Location = new System.Drawing.Point(272, 113);
+            this.ActCost_textbx.Location = new System.Drawing.Point(260, 92);
             this.ActCost_textbx.Name = "ActCost_textbx";
-            this.ActCost_textbx.Size = new System.Drawing.Size(84, 23);
+            this.ActCost_textbx.Size = new System.Drawing.Size(55, 23);
             this.ActCost_textbx.TabIndex = 24;
             this.ActCost_textbx.TextChanged += new System.EventHandler(this.ActCost_textbx_TextChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(272, 95);
+            this.label2.Location = new System.Drawing.Point(259, 74);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 15);
+            this.label2.Size = new System.Drawing.Size(127, 15);
             this.label2.TabIndex = 23;
-            this.label2.Text = "ФактЗатраты:";
+            this.label2.Text = "Фактические затраты:";
             // 
             // dateTimePicker2
             // 
             this.dateTimePicker2.CustomFormat = "dd.MM.yyyy";
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker2.Location = new System.Drawing.Point(272, 175);
+            this.dateTimePicker2.Location = new System.Drawing.Point(373, 202);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(146, 23);
+            this.dateTimePicker2.Size = new System.Drawing.Size(104, 23);
             this.dateTimePicker2.TabIndex = 26;
-            this.dateTimePicker2.Value = new System.DateTime(2023, 12, 6, 16, 9, 15, 0);
+            this.dateTimePicker2.Value = new System.DateTime(2011, 11, 11, 0, 0, 0, 0);
             this.dateTimePicker2.Visible = false;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(272, 157);
+            this.label3.Location = new System.Drawing.Point(373, 183);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(103, 15);
             this.label3.TabIndex = 25;
@@ -272,7 +272,7 @@ namespace SuggestImprovements
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(395, 116);
+            this.checkBox1.Location = new System.Drawing.Point(260, 182);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(104, 19);
             this.checkBox1.TabIndex = 27;
@@ -282,7 +282,7 @@ namespace SuggestImprovements
             // 
             // Number_textBox
             // 
-            this.Number_textBox.Location = new System.Drawing.Point(176, 17);
+            this.Number_textBox.Location = new System.Drawing.Point(428, 27);
             this.Number_textBox.Name = "Number_textBox";
             this.Number_textBox.ReadOnly = true;
             this.Number_textBox.Size = new System.Drawing.Size(84, 23);
@@ -292,7 +292,7 @@ namespace SuggestImprovements
             // Number_label
             // 
             this.Number_label.AutoSize = true;
-            this.Number_label.Location = new System.Drawing.Point(176, -1);
+            this.Number_label.Location = new System.Drawing.Point(428, 9);
             this.Number_label.Name = "Number_label";
             this.Number_label.Size = new System.Drawing.Size(48, 15);
             this.Number_label.TabIndex = 28;
@@ -331,7 +331,7 @@ namespace SuggestImprovements
             this.Controls.Add(this.Save_button);
             this.Controls.Add(this.Author_cbx);
             this.Name = "AddProposal";
-            this.Text = "Add proposal";
+            this.Text = "Форма ППУ";
             this.Load += new System.EventHandler(this.AddPosition_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
