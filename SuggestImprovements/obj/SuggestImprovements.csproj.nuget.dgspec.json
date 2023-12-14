@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Filesprogramming\\BD\\PropApp\\SuggestImprovements\\SuggestImprovements.csproj": {}
+    "E:\\СИТУ\\PostgreBD\\PropApp\\SuggestImprovements\\SuggestImprovements.csproj": {}
   },
   "projects": {
-    "D:\\Filesprogramming\\BD\\PropApp\\SuggestImprovements\\SuggestImprovements.csproj": {
+    "E:\\СИТУ\\PostgreBD\\PropApp\\SuggestImprovements\\SuggestImprovements.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Filesprogramming\\BD\\PropApp\\SuggestImprovements\\SuggestImprovements.csproj",
+        "projectUniqueName": "E:\\СИТУ\\PostgreBD\\PropApp\\SuggestImprovements\\SuggestImprovements.csproj",
         "projectName": "SuggestImprovements",
-        "projectPath": "D:\\Filesprogramming\\BD\\PropApp\\SuggestImprovements\\SuggestImprovements.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\Filesprogramming\\BD\\PropApp\\SuggestImprovements\\obj\\",
+        "projectPath": "E:\\СИТУ\\PostgreBD\\PropApp\\SuggestImprovements\\SuggestImprovements.csproj",
+        "packagesPath": "C:\\Users\\Zhekis\\.nuget\\packages\\",
+        "outputPath": "E:\\СИТУ\\PostgreBD\\PropApp\\SuggestImprovements\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Zhekis\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -74,7 +74,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

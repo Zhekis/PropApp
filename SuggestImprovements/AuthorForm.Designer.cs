@@ -28,123 +28,138 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            comboBox1 = new ComboBox();
-            comboBox2 = new ComboBox();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            Savebutton = new Button();
-            SuspendLayout();
+            this.name_textBox = new System.Windows.Forms.TextBox();
+            this.lastName_textBox = new System.Windows.Forms.TextBox();
+            this.pos_comboBox = new System.Windows.Forms.ComboBox();
+            this.dep_comboBox = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.Savebutton = new System.Windows.Forms.Button();
+            this.Cancelbutton = new System.Windows.Forms.Button();
+            this.SuspendLayout();
             // 
-            // textBox1
+            // name_textBox
             // 
-            textBox1.Location = new Point(195, 41);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(121, 23);
-            textBox1.TabIndex = 0;
+            this.name_textBox.Location = new System.Drawing.Point(195, 41);
+            this.name_textBox.Name = "name_textBox";
+            this.name_textBox.Size = new System.Drawing.Size(121, 23);
+            this.name_textBox.TabIndex = 0;
             // 
-            // textBox2
+            // lastName_textBox
             // 
-            textBox2.Location = new Point(195, 83);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(121, 23);
-            textBox2.TabIndex = 1;
+            this.lastName_textBox.Location = new System.Drawing.Point(195, 83);
+            this.lastName_textBox.Name = "lastName_textBox";
+            this.lastName_textBox.Size = new System.Drawing.Size(121, 23);
+            this.lastName_textBox.TabIndex = 1;
             // 
-            // comboBox1
+            // pos_comboBox
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(195, 126);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(121, 23);
-            comboBox1.TabIndex = 2;
+            this.pos_comboBox.FormattingEnabled = true;
+            this.pos_comboBox.Location = new System.Drawing.Point(195, 126);
+            this.pos_comboBox.Name = "pos_comboBox";
+            this.pos_comboBox.Size = new System.Drawing.Size(121, 23);
+            this.pos_comboBox.TabIndex = 2;
             // 
-            // comboBox2
+            // dep_comboBox
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(195, 168);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(121, 23);
-            comboBox2.TabIndex = 3;
+            this.dep_comboBox.FormattingEnabled = true;
+            this.dep_comboBox.Location = new System.Drawing.Point(195, 168);
+            this.dep_comboBox.Name = "dep_comboBox";
+            this.dep_comboBox.Size = new System.Drawing.Size(121, 23);
+            this.dep_comboBox.TabIndex = 3;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(118, 44);
-            label1.Name = "label1";
-            label1.Size = new Size(61, 15);
-            label1.TabIndex = 4;
-            label1.Text = "FirstName";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(118, 44);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(61, 15);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "FirstName";
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(121, 86);
-            label2.Name = "label2";
-            label2.Size = new Size(58, 15);
-            label2.TabIndex = 5;
-            label2.Text = "Lastname";
-            label2.Click += label2_Click;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(121, 86);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(58, 15);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Lastname";
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(129, 129);
-            label3.Name = "label3";
-            label3.Size = new Size(50, 15);
-            label3.TabIndex = 6;
-            label3.Text = "Position";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(129, 129);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(50, 15);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Position";
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(109, 171);
-            label4.Name = "label4";
-            label4.Size = new Size(70, 15);
-            label4.TabIndex = 7;
-            label4.Text = "Department";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(109, 171);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(70, 15);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Department";
             // 
             // Savebutton
             // 
-            Savebutton.Location = new Point(216, 212);
-            Savebutton.Name = "Savebutton";
-            Savebutton.Size = new Size(75, 23);
-            Savebutton.TabIndex = 8;
-            Savebutton.Text = "Save";
-            Savebutton.UseVisualStyleBackColor = true;
+            this.Savebutton.Location = new System.Drawing.Point(138, 219);
+            this.Savebutton.Name = "Savebutton";
+            this.Savebutton.Size = new System.Drawing.Size(75, 23);
+            this.Savebutton.TabIndex = 8;
+            this.Savebutton.Text = "Сохранить";
+            this.Savebutton.UseVisualStyleBackColor = true;
+            this.Savebutton.Click += new System.EventHandler(this.Savebutton_Click);
+            // 
+            // Cancelbutton
+            // 
+            this.Cancelbutton.Location = new System.Drawing.Point(229, 219);
+            this.Cancelbutton.Name = "Cancelbutton";
+            this.Cancelbutton.Size = new System.Drawing.Size(75, 23);
+            this.Cancelbutton.TabIndex = 9;
+            this.Cancelbutton.Text = "Отмена";
+            this.Cancelbutton.UseVisualStyleBackColor = true;
+            this.Cancelbutton.Click += new System.EventHandler(this.Cancel_button_Click);
             // 
             // AuthorForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(442, 327);
-            Controls.Add(Savebutton);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Controls.Add(comboBox2);
-            Controls.Add(comboBox1);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
-            Name = "AuthorForm";
-            Text = "AuthorForm";
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(442, 327);
+            this.Controls.Add(this.Cancelbutton);
+            this.Controls.Add(this.Savebutton);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.dep_comboBox);
+            this.Controls.Add(this.pos_comboBox);
+            this.Controls.Add(this.lastName_textBox);
+            this.Controls.Add(this.name_textBox);
+            this.Name = "AuthorForm";
+            this.Text = "AuthorForm";
+            this.Load += new System.EventHandler(this.AuthorForm_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
 
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private ComboBox comboBox1;
-        private ComboBox comboBox2;
+        private TextBox name_textBox;
+        private TextBox lastName_textBox;
+        private ComboBox pos_comboBox;
+        private ComboBox dep_comboBox;
         private Label label1;
         private Label label2;
         private Label label3;
         private Label label4;
         private Button Savebutton;
+        private Button Cancelbutton;
     }
 }

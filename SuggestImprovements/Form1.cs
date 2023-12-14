@@ -17,19 +17,20 @@ namespace SuggestImprovements
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            FillGridView();
             SetComboValues();
+        }
+
+        private void Form1_Activated(object sender, EventArgs e)
+        {
+            FillGridView();
+            Filter_comboBox.Text = "Все подразделения";
         }
 
         private void report_button_Click(object sender, EventArgs e)
         {
             ReportForm form = new ReportForm();
             form.Show();
-        }
-
-        private void Position_button_Click(object sender, EventArgs e)
-        {
-            PositionForm position = new PositionForm();
-            position.Show();
         }
 
         private void AddButton_Click(object sender, EventArgs e)
@@ -120,12 +121,6 @@ namespace SuggestImprovements
             return result;
         }
 
-        private void Form1_Activated(object sender, EventArgs e)
-        {
-            FillGridView();
-            Filter_comboBox.Text = "Подразделение";
-        }
-
         private void FillGridView()
         {
             using(LeanSiContext context = new LeanSiContext())
@@ -206,24 +201,10 @@ namespace SuggestImprovements
 
         private void Filter_comboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            List<string> deps = new List<string>();
-            deps.Add("Метан");
-            deps.Add("ПОМС");
-            deps.Add("ПЦГ");
-            deps.Add("Формалин");
-            deps.Add("КФК");
-            deps.Add("ТХЦ");
-            deps.Add("АКМ");
-            deps.Add("ЦПРТ");
-            deps.Add("ЖДЦ");
-            deps.Add("ЦЭС");
-            int index = Filter_comboBox.SelectedIndex;
-            string comboValue = deps[index];
-
-            FilterDepartment(comboValue);
+            FilterDepartment();
         }
 
-        private void FilterDepartment(string s)
+        private void FilterDepartment()
         {
             using (LeanSiContext context = new LeanSiContext())
             {
@@ -233,8 +214,7 @@ namespace SuggestImprovements
                         join au in context.Authors.AsNoTracking() on p.Author equals au.Id
                         join d in context.Departments.AsNoTracking() on au.Department equals d.Id
                         join j in context.Judgments.AsNoTracking() on p.Judgment equals j.Id
-                        where d.Name == s
-                        //where d.Name == Filter_comboBox.SelectedValue.ToString()
+                        where d.Name == Filter_comboBox.Text
                         select new ProposalElem
                         {
                             Number = p.Number,
@@ -257,26 +237,6 @@ namespace SuggestImprovements
                 var source = new BindingSource(bindingList, null);
                 dataGridView1.DataSource = source;
             }
-
-            //using (var context = new LeanSiContext())
-            //{
-            //    var result = from p in context.Proposals
-            //                 join a in context.Areas on p.Area equals a.Id
-            //                 join l in context.Losses on p.Loss equals l.Id
-            //                 join au in context.Authors on p.Author equals au.Id
-            //                 join d in context.Departments on au.Department equals d.Id
-            //                 group d by d.Name into g
-            //                 select new
-            //                 {
-            //                     Department = g.Key,
-            //                     Amount = g.Count(),
-            //                     //AmountRealised = g.Count(x => x.IsCompleted),
-            //                     //PlanCosts = g.Sum(x => x.Costs),
-            //                     // Add other fields...
-            //                 };
-
-            //    dataGridView1.DataSource = result.ToList();
-            //}
         }
 
         private void Authors_button_Click(object sender, EventArgs e)
@@ -288,7 +248,8 @@ namespace SuggestImprovements
         private void Refreshbutton_Click(object sender, EventArgs e)
         {
             FillGridView();
-            Filter_comboBox.Text = "Подразделение";
+            Filter_comboBox.ResetText();
+            Filter_comboBox.Text = "Все подразделения";
         }
     }
 }

@@ -27,20 +27,20 @@ namespace SuggestImprovements
             InitializeComponent();
             StartPosition = FormStartPosition.CenterScreen;
             _key = null;
-            _authorKeys= new Dictionary<int, string>();
+            _authorKeys = new Dictionary<int, string>();
             _areaKeys = new Dictionary<int, string>();
-            _lossKeys= new Dictionary<int, string>();
-            _judgKeys= new Dictionary<int, string>();
+            _lossKeys = new Dictionary<int, string>();
+            _judgKeys = new Dictionary<int, string>();
         }
 
         public AddProposal(ProposalKeys? key)
         { 
             InitializeComponent();
             _key = key;
-            _authorKeys= new Dictionary<int, string>();
+            _authorKeys = new Dictionary<int, string>();
             _areaKeys = new Dictionary<int, string>();
-            _lossKeys= new Dictionary<int, string>();
-            _judgKeys= new Dictionary<int, string>();
+            _lossKeys = new Dictionary<int, string>();
+            _judgKeys = new Dictionary<int, string>();
         }
 
         private void FillJudgment()
